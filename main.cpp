@@ -23,8 +23,9 @@ int main() {
             for(f=0; f<10; f++) {
               for(g=0; g<10; g++) {
                 for(h=0; h<10; h++) {
-                  n1=h*dec[7]+g*dec[6]+f*dec[5]+e*dec[4]+d*dec[3]+c*dec[2]+b*dec[1]+a;
-                  if ( n1==(p[a]+p[b]+p[c]+p[d]+p[e]+p[f]+p[g]+p[h]) ) cout << n1 << endl;
+                  n1=a*dec[7]+b*dec[6]+c*dec[5]+d*dec[4]+e*dec[3]+f*dec[2]+g*dec[1]+h;
+                  n2=p[a]+p[b]+p[c]+p[d]+p[e]+p[f]+p[g]+p[h];
+                  if ( n1==n2 ) cout << n1 << endl;
                   else continue;
                 }
               }
